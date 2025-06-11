@@ -1,0 +1,482 @@
+/* Fontes */
+@import url('https://fonts.cdnfonts.com/css/garet');
+@import url('https://db.onlinewebfonts.com/c/9f2b621d82a6ba15ab2d3efa1a2ae582?family=Maragsa+Display');
+
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garet', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Seção Hero */
+.hero-section {
+    padding: 80px 0;
+}
+
+.apresentacao .subtitulo {
+    font-family: 'Garet', sans-serif;
+    letter-spacing: 4px;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.titulo-principal {
+    font-family: 'Maragsa Display', serif;
+    font-size: 96px;
+    line-height: 0.9;
+    color: #a50000;
+    margin-bottom: 50px;
+}
+
+.materias {
+    margin-top: 40px;
+}
+
+.materias p {
+    font-family: 'Garet', sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.materias hr {
+    height: 3px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+
+/* Seção Missão */
+.missao-section {
+    padding: 80px 0;
+}
+
+.titulo-secao {
+    font-family: 'Maragsa Display', serif;
+    font-size: 48px;
+    line-height: 1.1;
+    color: #a50000;
+    margin-bottom: 30px;
+}
+
+.missao-section .subtitulo {
+    font-family: 'Garet', sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Seção Habilidades */
+.habilidades-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.habilidades-section .subtitulo {
+    font-family: 'Maragsa Display', serif;
+    font-size: 48px;
+    color: #a50000;
+    margin-bottom: 40px;
+}
+
+.habilidades-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.habilidade-item {
+    font-size: 24px;
+    padding: 15px 30px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.habilidade-item:hover {
+    background-color: #a50000;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Seção Projetos */
+.projetos-section {
+    padding: 80px 0;
+}
+
+.projetos-section .subtitulo {
+    font-family: 'Garet', sans-serif;
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.projetos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.projeto-card {
+    border: 1px solid #000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto-imagem-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.projeto-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s;
+}
+
+.projeto-card:hover .projeto-imagem {
+    transform: scale(1.03);
+}
+
+.projeto-conteudo {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto-conteudo h3 {
+    font-family: 'Maragsa Display', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.projeto-conteudo p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.projeto-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+    align-self: flex-start;
+}
+
+.projeto-link:hover {
+    border-bottom: 1px solid #000;
+}
+
+
+/* Seção Contato com fonte Garet */
+.contato-section {
+    padding: 80px 0;
+    font-family: 'Garet', sans-serif;
+}
+
+.contato-section .subtitulo {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.contato-section .titulo-secao {
+    font-size: 45px;
+    line-height: 1.2;
+    color: #a50000;
+    margin-bottom: 40px;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+.info-contato {
+    margin-top: 30px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-label {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.info-valor {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.redes-sociais a:hover {
+    transform: translateY(-3px);
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.redes-sociais img:hover {
+    opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato-section {
+        padding: 60px 0;
+    }
+    
+    .contato-section .titulo-secao {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .info-valor {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contato-section .titulo-secao {
+        font-size: 24px;
+    }
+    
+    .info-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.redes-sociais img:hover {
+    opacity: 1;
+}
+
+/* Estilos específicos para a imagem de contato */
+.img-contato {
+    width: 100%;
+    max-width: 450px; /* Largura máxima conforme protótipo */
+    height: auto;
+    display: block;
+    margin-left: auto; /* Alinha a imagem à direita */
+    border-radius: 4px; /* Bordas levemente arredondadas se necessário */
+    object-fit: cover; /* Garante que a imagem mantenha proporções */
+    aspect-ratio: 3/4; /* Proporção recomendada (ajuste conforme protótipo) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil se presente no protótipo */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 992px) {
+    .img-contato {
+        max-width: 350px;
+        margin: 40px auto 0; /* Centraliza em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .img-contato {
+        max-width: 100%;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .titulo-principal {
+        font-size: 72px;
+    }
+    
+    .titulo-secao {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+   
+    .titulo-principal {
+        font-size: 60px;
+    }
+    
+    .hero-section, .missao-section, .habilidades-section, .projetos-section, .contato-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section .row, .missao-section .row {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .titulo-principal {
+        font-size: 48px;
+    }
+    
+    .subtitulo {
+        font-size: 20px;
+    }
+    
+    .habilidade-item {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Estilos para os Popups */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 1001;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-container.active {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.popup-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a50000;
+}
+
+.popup-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.popup-title {
+    font-family: 'Maragsa Display', serif;
+    font-size: 28px;
+    color: #a50000;
+    margin-bottom: 15px;
+}
+
+.popup-description {
+    font-family: 'Garet', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.popup-link {
+    font-family: 'Maragsa Display', serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a50000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.popup-link:hover {
+    background-color: #8a0000;
+}
