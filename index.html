@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Guilherme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <script>
+    function tryAutoplay() {
+      const audio = new Audio('vanish.mp3');
+      audio.loop = true;
+      
+      // Tenta tocar automaticamente
+      const promise = audio.play();
+      
+      // Se bloqueado, mostra botão de ativação
+      if (promise.catch) {
+        promise.catch(() => {
+          const btn = document.createElement('button');
+          btn.innerHTML = '▶ Ativar Música';
+          btn.style = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: #a50000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+          `;
+          btn.onclick = () => audio.play().then(() => btn.remove());
+          document.body.appendChild(btn);
+        });
+      }
+    }
+    
+    // Inicia quando a página carregar
+    window.onload = tryAutoplay;
+  </script>
+
+
+
+
+</head>
+
+<body>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="container hero-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="apresentacao">
+                        <p class="subtitulo">Futuro Professor</p>
+                        <h1 class="titulo-principal">Guilherme<br>Gonçalves</h1>
+                    </div>
+                    
+                    <div class="materias">
+                        <p>Sociologia</p>
+                        <hr>
+                        <p>Ciências Políticas</p>
+                        <hr>
+                        <p>Antropologia</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="https://i.imgur.com/mHTVCzO.png" alt="Retrato de Guilherme Gonçalves" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Missão -->
+        <section class="container missao-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="subtitulo">Minha Missão</p>
+                    <h2 class="titulo-secao">
+                        A Sociologia é minha lente e<br>meu compasso. Não apenas<br>estudo o mundo, navego<br>nele, desvendando
+                        os mapas<br>invisíveis que tecem a vida<br>em sociedade.
+                    </h2>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="https://i.imgur.com/zTfL0QO.png" alt="Imagem ilustrativa de sociologia" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section class="container habilidades-section">
+            <p class="subtitulo">Minhas habilidades</p>
+            <div class="habilidades-lista">
+                <div class="habilidade-item">Didático</div>
+                <div class="habilidade-item">Inovador</div>
+                <div class="habilidade-item">Analítico</div>
+                <div class="habilidade-item">Observador</div>
+            </div>
+        </section>
+
+      <!-- Seção Projetos 1 -->
+<section class="container projetos-section">
+    <p class="subtitulo">Meus Projetos</p>
+    
+    <div class="projetos-lista">
+        <!-- Projeto 1 - ONHB -->
+        <div class="projeto-card">
+            <div class="projeto-imagem-container">
+                <img src="https://i.imgur.com/6JfG9xF.png" alt="Projeto ONHB" class="projeto-imagem">
+            </div>
+            <div class="projeto-conteudo">
+                <h3>ONHB</h3>
+             <a href="https://prova.olimpiadadehistoria.com.br/certificado/7c981de9706aabf" class="projeto-link">Aprovado em duas fases da Olimpíada Nacional da História Brasileira</a>
+            </div>
+        </div>
+        
+        <!-- Projeto 2 - Maré Negra -->
+        <div class="projeto-card">
+            <div class="projeto-imagem-container">
+                <img src="https://i.imgur.com/TzNEMlY.png" alt="Projeto Maré Negra" class="projeto-imagem">
+            </div>
+            <div class="projeto-conteudo">
+                <h3>Maré Negra</h3>
+                <a href="https://marenegra.my.canva.site/" class="projeto-link">Participante de um coletivo estudantil que luta por uma educação antirracista</a>
+            </div>
+        </div>
+        
+        <!-- Projeto 3 - Grêmio Estudantil -->
+        <div class="projeto-card">
+            <div class="projeto-imagem-container">
+                <img src="https://i.imgur.com/oxuM1u0.jpeg" alt="Projeto Grêmio Estudantil" class="projeto-imagem">
+            </div>
+            <div class="projeto-conteudo">
+                <h3>Grêmio Estudantil</h3>
+                <p>Coordenador de comunicações do grêmio estudantil de duas escolas</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="container projetos-section">
+    <p class="subtitulo">Projetos tecnológicos</p>
+    
+    <div class="projetos-lista">
+        <!-- Projeto 4 - BolcheFlix -->
+        <div class="projeto-card">
+            <div class="projeto-imagem-container">
+                <img src="https://imgur.com/uIlBmjC.jpg" alt="Projeto Bolcheflix" class="projeto-imagem">
+            </div>
+            <div class="projeto-conteudo">
+                <h3>BolcheFlix</h3>
+             <a href="https://guixnzz777.github.io/BolcheFlix/" class="projeto-link">Uma página de videos para camaradas adquirirem mais conhecimento rumo à revolução comunista!</a>
+            </div>
+        </div>
+        
+        <!-- Projeto 2 - Hot n' Cold -->
+        <div class="projeto-card">
+            <div class="projeto-imagem-container">
+                <img src="https://i.imgur.com/eKOswlE.png" alt="Projeto Hot n' Cold" class="projeto-imagem">
+            </div>
+            <div class="projeto-conteudo">
+                <h3>Hot n' Cold</h3>
+                <a href="https://editor.p5js.org/guixnzz/full/piP7nKhw-" class="projeto-link">Um jogo relaxante onde você persegue um ponto esquivo usando pistas de cores vibrantes!</a>
+            </div>
+        </div>
+        
+        <!-- Projeto 3 - FlopRun -->
+        <div class="projeto-card">
+            <div class="projeto-imagem-container">
+                <img src="https://i.imgur.com/oiKY12f.png" alt="Projeto Grêmio Estudantil" class="projeto-imagem">
+            </div>
+            <div class="projeto-conteudo">
+                <h3>FlopRun</h3>
+                <a href="https://editor.p5js.org/guixnzz/full/-uQPKAEv9" class="projeto-link">Um jogo caótico onde ícones da cultura pop competem em uma pista surreal com mensagens nonsense!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Popup Overlay -->
+<div class="popup-overlay" id="popupOverlay"></div>
+
+<!-- Popup Container -->
+<div class="popup-container" id="popupContainer">
+    <button class="popup-close-btn" id="popupCloseBtn">&times;</button>
+    <div class="popup-content">
+        <img class="popup-image" id="popupImage" src="" alt="">
+        <h3 class="popup-title" id="popupTitle"></h3>
+        <p class="popup-description" id="popupDescription"></p>
+        <a class="popup-link" id="popupLink" href="#" target="_blank">Ver Projeto</a>
+    </div>
+</div>
+
+
+
+
+
+
+ <!-- Seção Contato -->
+<section class="container contato-section">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <p class="subtitulo">Entre em contato</p>
+            <h2 class="titulo-secao">Vamos conversar sobre educação e sociedade</h2>
+            
+            <div class="info-contato">
+                <div class="info-item">
+                    <p class="info-label">Email</p>
+                    <p class="info-valor">guigagon.2009gmail.com</p>
+                </div>
+                
+                <div class="info-item">
+                    <p class="info-label">Telefone</p>
+                    <p class="info-valor">+55 (11) 98525-6602</p>
+                </div>
+                
+                <div class="info-item">
+                    <p class="info-label">Redes sociais</p>
+                    <div class="redes-sociais">
+                        <a href="https://www.linkedin.com/in/guigagon/"><img src="https://i.imgur.com/imBRmo8.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/guixnzz._"><img src="https://i.imgur.com/cMjhY9Q.png" alt="Instagram"></a>
+                        <a href="https://wa.link/70ygs3"><img src="https://i.imgur.com/ciiP5Ok.png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <img src="https://i.imgur.com/1OgxSVj.jpeg" alt="Guilherme Gonçalves - Professor" class="img-contato">
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 Guilherme Gonçalves. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+// Dados dos projetos - você pode adicionar mais detalhes aqui
+const projetos = {
+    "ONHB": {
+        image: "https://i.imgur.com/6JfG9xF.png",
+        description: "Fui aprovado em três fases da Olimpíada Nacional de História do Brasil, que exigiu análise aprofundada de fontes históricas e argumentação crítica, com tarefas desafiadoras que testaram a capacidade dos participantes de relacionar contextos e interpretações",
+        link: "https://prova.olimpiadadehistoria.com.br/certificado/7c981de9706aabf"
+    },
+    "Maré Negra": {
+        image: "https://i.imgur.com/TzNEMlY.png",
+        description: "Sou participante ativo do coletivo estudantil Maré Negra, que é um coletivo antirracista que atua através de intervenções artísticas, debates e produção cultural, com foco em combater o racismo e fortalecer narrativas negras.",
+        link: "https://marenegra.my.canva.site/"
+    },
+    "Grêmio Estudantil": {
+        image: "https://i.imgur.com/oxuM1u0.jpeg",
+        description: "Atuei como coordenador de comunicações do grêmio estudantil em duas escolas, representando os estudantes, organizando eventos, debates e lutando por direitos dentro da escola. Composto por alunos eleitos, promovemos atividades culturais, esportivas e políticas, fortalecendo a voz estudantil e a participação democrática.",
+        link: "#"
+    },
+    "BolcheFlix": {
+        image: "https://imgur.com/uIlBmjC.jpg",
+        description: "Uma plataforma alternativa de streaming que reúne filmes, documentários e produções audiovisuais com temáticas socialistas, revolucionárias e anticapitalistas. O site oferece recomendações de obras que criticam o sistema vigente, exploram lutas populares e destacam perspectivas históricas marginalizadas.",
+        link: "https://guixnzz777.github.io/BolcheFlix/"
+    },
+    "Hot n' Cold": {
+        image: "https://i.imgur.com/eKOswlE.png",
+        description: "Desenvolvido em p5.js, Hot n' Cold é um jogo minimalista e meditativo onde o objetivo é encontrar um ponto esquivo escondido em um campo de cores vibrantes. O jogador deve seguir pistas sutis de tonalidades e contrastes para localizar o alvo, promovendo concentração e um ritmo desacelerado – perfeito para descontrair.",
+        link: "https://editor.p5js.org/guixnzz/full/piP7nKhw-"
+    },
+    "FlopRun": {
+        image: "https://i.imgur.com/oiKY12f.png",
+        description: "JUm jogo leve e descontraído que criei usando p5.js, onde personagens famosos da cultura pop correm em uma pista colorida e animada. Com um toque de humor e criatividade, o jogo é uma demonstração das minhas habilidades em programação e design, feito para entreter de forma simples e cativante.",
+        link: "https://editor.p5js.org/guixnzz/full/-uQPKAEv9"
+    }
+};
+
+// Elementos do DOM
+const popupOverlay = document.getElementById('popupOverlay');
+const popupContainer = document.getElementById('popupContainer');
+const popupCloseBtn = document.getElementById('popupCloseBtn');
+const popupImage = document.getElementById('popupImage');
+const popupTitle = document.getElementById('popupTitle');
+const popupDescription = document.getElementById('popupDescription');
+const popupLink = document.getElementById('popupLink');
+const projetoCards = document.querySelectorAll('.projeto-card');
+
+// Adiciona evento de clique para cada card de projeto
+projetoCards.forEach(card => {
+    card.addEventListener('click', function() {
+        const projetoNome = this.querySelector('h3').textContent;
+        const projetoData = projetos[projetoNome];
+        
+        if (projetoData) {
+            popupImage.src = projetoData.image;
+            popupTitle.textContent = projetoNome;
+            popupDescription.textContent = projetoData.description;
+            popupLink.href = projetoData.link;
+            
+            // Mostra o popup
+            popupOverlay.classList.add('active');
+            popupContainer.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Impede scroll da página
+        }
+    });
+});
+
+// Fecha o popup quando clicar no botão de fechar
+popupCloseBtn.addEventListener('click', closePopup);
+
+// Fecha o popup quando clicar no overlay
+popupOverlay.addEventListener('click', closePopup);
+
+// Fecha o popup quando pressionar ESC
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closePopup();
+    }
+});
+
+function closePopup() {
+    popupOverlay.classList.remove('active');
+    popupContainer.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Restaura scroll da página
+}
+</script>
+
+</body>
+
+</html>
